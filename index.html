@@ -122,7 +122,7 @@ function drawGauge({
       ctx.arc(centerX, centerY, radius, startAngle, angle);
       ctx.lineWidth = (hoverIndex === i ? baseWidth + 10 : baseWidth - 4);
       ctx.strokeStyle = (hoverIndex === i)
-        ? d.color.replace("0.6", "1")
+        ? d.color.replace("0.5", "0.8")
         : d.color;
       ctx.lineCap = "round";
       ctx.stroke();
@@ -190,8 +190,8 @@ drawGauge({
   canvas: "#gauge",
   title: "2023年台北市與全國孕婦產前檢查利用率",
   data: [
-    { label: "台北市", value: 92.3, color: "rgba(89,156,73,0.6)" },
-    { label: "全國",   value: 96.8, color: "rgba(130,87,194,0.6)" }
+    { label: "台北市", value: 92.3, color: "rgba(89,156,73,0.5)" },
+    { label: "全國",   value: 96.8, color: "rgba(130,87,194,0.5)" }
   ]
 });
 </script>
