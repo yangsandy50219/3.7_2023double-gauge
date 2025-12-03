@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<canvas id="gauge" width="900" height="650"></canvas>
+<canvas id="gauge" width="800" height="600"></canvas>
 <div class="gauge-tooltip" id="gaugeTooltip"></div>
 
 <script>
@@ -49,7 +49,7 @@ function drawGauge({
   const tooltip = document.getElementById("gaugeTooltip");
 
   const centerX = cvs.width / 2;
-  const centerY = cvs.height - 190; // ⭐ 往下移 60px（原本是 -250）
+  const centerY = cvs.height - 160;
   const baseRadius = 80 + data.length * gap;
 
   const startAngle = -Math.PI; // 左端（180°）
